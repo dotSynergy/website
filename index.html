@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, user-scalable=no,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+        <title>dotSynergy's Site</title>
+        <meta name="description" content="Sito principale di Samuele Barella.">
+        
+        <!--        favicon         -->
+        <link rel="icon" href="./favicon.ico" type="image/x-icon">
+        
+        <!--        custom css      -->
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/bg.css">
+        <link rel="stylesheet" href="css/containers.css">
+        <link rel="stylesheet" href="css/buttons.css">
+        <link rel="stylesheet" href="css/portfolio.css">
+        <link rel="stylesheet" href="css/contacts.css">
+        <link rel="stylesheet" href="css/bio.css">
+        
+        <!--        icons           -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
+        
+        <!--        before js       -->
+        <script src="js/buttons.js"></script>
+    </head>
+    <body>
+        <div class="main-container">
+            <div class="wrapper">
+                <img id="background" src="img/bg.png"/>
+            </div>
+            <div class="title-container">
+                <h1 class="main-title">Samuele<br>Barella</h1>
+                <h2 class="main-subtitle">
+                    Embedded,<br>
+                    Full-Stack,<br>
+                    Drone,<br>
+                    <b>DEVELOPER</b>
+                </h2>
+            </div>
+            <img src="img/me.png" class="main-figure"/>
+        </div>
+        
+        <button id="contacts_button" class="dir-buttons" onClick="openContacts();"></button>
+        <button id="portfolio_button" class="dir-buttons" onClick="openPortfolio();"></button>
+        <button id="bio_button" class="dir-buttons" onClick="openBio();"></button>
+        
+        
+        <div id="portfolio_container" class="portfolio-container">
+            <h1 class="container-title">Portfolio</h1>
+            <a class="close-button" id="c_btn_p" onClick="closePortfolio();"></a>
+            
+            <div class="portfolio-items">
+                <div class="portfolio-item">
+                    <div class="portfolio-card has-date">
+                        
+                        <div class="portfolio-image-container">
+                            <img class="portfolio-image" src="img/drone.png"/>
+                        </div>
+                        <h1 class="portfolio-item-title">
+                            <a href="https://www.openuav.it">openuav.it</a>
+                        </h1>
+                        <h2 class="portfolio-item-subtitle">piattaforma drone open source ed sdk </h2>
+                        <span class="portfolio-item-date">10/2020 — ONGOING</span>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-card has-date">
+                        <div class="portfolio-image-container">
+                            <img class="portfolio-image" src="img/stranck.png"/>
+                        </div>
+                        <h1 class="portfolio-item-title">
+                            <a href="https://www.stranck.ovh">stranck.ovh</a>
+                        </h1>
+                        <h2 class="portfolio-item-subtitle">sito web per un amico, solo in HTML+CSS e JQuery per link e animazioni</h2>
+                        <span class="portfolio-item-date">09/2020</span>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item">
+                    <div class="portfolio-card has-date">
+                        <div class="portfolio-image-container">
+                            <img class="portfolio-image" src="img/meliver.png"/>
+                        </div>
+                        <h1 class="portfolio-item-title">
+                            <a href="https://www.meliver.com">meliver.com</a>
+                        </h1>
+                        <h2 class="portfolio-item-subtitle">backend Laravel di una piattaforma per ordinare da casa o ristorante in fase di sviluppo</h2>
+                        <span class="portfolio-item-date">05/2020 — ONGOING</span>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-card has-date">
+                        <img class="portfolio-image" src="img/meliver_console.png"/>
+                        <h1 class="portfolio-item-title">Meliver Console</h1>
+                        <h2 class="portfolio-item-subtitle">pannello per la gestione di servizi, menu, listini e gruppi, oltre alla visione di statistiche per <a href="https://www.meliver.com">meliver.com</a></h2>
+                        <span class="portfolio-item-date">05/2020 — ONGOING</span>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-card has-date">
+                        <img class="portfolio-image" src="img/lamd.png"/>
+                        <h1 class="portfolio-item-title">
+                            <a href="https://www.lamdigitale.com">lamdigitale.com</a>
+                        </h1>
+                        <h2 class="portfolio-item-subtitle">sito web Lamdigital, societá di sviluppo software per ordinare al ristorante</h2>
+                        <span class="portfolio-item-date">09/2019 </span>
+                    </div>
+                </div>
+            </div>
+            <hr class="container-separator"/>
+            <h1 class="container-second-title">Progetti Scolastici</h1>
+            <div class="portfolio-items no-title">
+                <div class="portfolio-item small">
+                    <div class="portfolio-card has-date">
+                        <div class="portfolio-image-container">
+                            <img class="portfolio-image" src="img/matura.png"/>
+                        </div>
+                        <h1 class="portfolio-item-title">
+                            <a href="https://dotsynergy.ddns.net/matura/sfw">Maturitá Docs</a>
+                        </h1>
+                        <h2 class="portfolio-item-subtitle">piccola web app con appunti e documenti utili alla maturitá</h2>
+                        <span class="portfolio-item-date">09/2018</span>
+                    </div>
+                </div>                
+                <div class="portfolio-item small">
+                    <div class="portfolio-card">
+                        <img class="portfolio-image" src="img/pcivile.png"/>
+                        <h1 class="portfolio-item-title">
+                            <a href="https://pcivile1.altervista.org/">
+                            pcivile_org</a>
+                        </h1>
+                        <h2 class="portfolio-item-subtitle">pannello web per il sistema di chiamata volontari della protezione civile di Mariano, sviluppato come progetto di maturitá</h2>
+                    </div>
+                </div>
+                <div class="portfolio-item small">
+                    <div class="portfolio-card">
+                        <img class="portfolio-image" src="img/pfe.png"/>
+                        <h1 class="portfolio-item-title">
+                            <a href="https://dotsynergy.ddns.net/pfe">PFE</a>
+                        </h1>
+                        <h2 class="portfolio-item-subtitle">sito per il progetto fattura elettronica</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div id="bio_container" class="bio-container">
+            <a class="close-button" id="c_btn_b" onClick="closeBio();"></a>
+            
+            <div class="inside-content">
+                
+                <section class="content-section">
+                    <h1>
+                        Seriamente, chi legge le bio?
+                    </h1>
+                    <p>
+                        <span class="first-letter">S</span>e ti interessa davvero e non hai chiuso istantaneamente,<br>
+                        ho studiato informatica all'<i>I.T.I.S. Magistri Cumacini di Como</i> tra il 2014 e il 2019. <br>
+                        Su suggerimento di insegnanti che ancora oggi ringrazio, mi sono avvicinato al mondo dello sviluppo di applicativi embedded e programmi di amministrazione web. Tale percorso mi é stato utilissimo per selezionare una serie di strumenti che ancora oggi sto imparando e utilizzo.<br>
+                        In seguito a questo periodo di studio, mi sono deciso a continuare presso l'<i>Universitá degli Studi dell'Insubria di Como</i>, dove sto seguendo il corso di Tecnologia dell'Informazione (informatica ma con extra steps).
+                    </p>
+                    
+                    <p>
+                        Nel mentre, ho lavorato brevemente presso Aermatica3D, dove ho appreso  qualche nozione del mio interesse principale attualmente: gli UAV, o piú semplicemente i droni.
+                    </p>                    
+                    
+                    <span class="bio-citation">
+                        Il breve periodo di lavoro presso Aermatica mi ha aperto la strada alla ricerca nel settore UAV, in particolare alle soluzioni open source
+                    </span>
+                    
+                    <p>
+                        L'esperienza mi ha fornito abbastanza strumenti da lanciare un progetto personale, tale <a href="https://openuav.it">OpenUAV</a>, il cui obiettivo principale é sviluppare una piattaforma  SDK per creare applicazioni in grado di girare sull'hardware degli UAV riducendo il fattore principale di break-in: il costo.
+                    </p>
+                    <p>
+                        Durante lo stesso periodo, ho aiutato un amico a costruire interamente il lato web della sua azienda: 
+                    </p>
+                        <ul>
+                            <li><b>webserver</b>, dalla configurazione della macchina alla gestione dei domini;</li>
+                            <li><b>mail server</b> con dominio custom;</li>
+                            <li><b>deployment system</b> via bitbucket;</li>
+                            <li><b>sito web</b> di presentazione;</li>
+                            <li><b>pannello web</b> per la gestione e visualizzazione dati;</li>
+                            
+                        </ul>
+                    
+                    <p>
+                        Tale esperienza mi ha fornito l'ultimo tassello delle conoscenze che utilizzo tutti i giorni: la gestione di sistemi Linux.
+                    </p>
+                    
+                    <p>
+                        Attualmente, oltre ad OpenUAV, sto per lanciare <a href="https://meliver.com">Meliver</a>, un sistema per ordinare direttamente da app, senza commissioni né obblighi per l'utente. Semplicemente si tratta di una piattaforma per comunicare al ristorante il proprio ordine, ed esso si occuperá di soddisfarlo come meglio crede.
+                    </p>
+                    
+                    <h1>BTW uso <s>Arch</s>Manjaro</h1>
+                </section>
+            
+            </div>
+        </div>
+        
+        <div id="contacts_container" class="contacts-container">
+            <a class="close-button" id="c_btn_c" onClick="closeContacts();"></a>
+            
+            <h1 class="container-title">Contatti</h1>
+            <div class="inside-content small-bottom-padding">
+                <div class="contacts-body">
+                    <span class="contact-method">
+                        /* Telegram
+                        <br><br>
+                        <a href="https://t.me/stefankarlstefansson">
+                            <i class="bi bi-telegram"></i> @StefanKarlStefansson
+                        </a>
+                        <br><br>
+                        */
+                    </span>
+                    <span class="contact-method">
+                        /* eMail
+                        <br><br>
+                        <a href="mailto:dotsynergy@protonmail.com">
+                            <i class="bi bi-envelope"></i> dotsynergy@protonmail.com
+                        </a>
+                        <br><br>
+                        <a href="mailto:samuele.barella@openuav.it">
+                            <i class="bi bi-bezier"></i> samuele.barella@openuav.it
+                        </a>
+                        <br><br>
+                        */
+                    </span>
+                </div>
+            </div>
+            
+            <hr class="container-separator"/>
+            <h1 class="container-second-title">Crediti e Licenza</h1>
+            
+            <div class="inside-content no-title">
+                <div class="contacts-footer">
+                    <span>
+                        icons: <a href="https://icons.getbootstrap.com/">bootstrap-icons</a><br>
+                        font: <a href="https://fonts.google.com/specimen/Noto+Sans">Noto Sans Mono</a><br>
+                        favicon: <a href="https://www.favicon.cc/?action=icon&file_id=959410">favicon.cc</a> (tip: scan it)<br>
+                        background: <a href="http://www.oby.ro/os/os_screen.htm">Sol_OS</a><br><br>
+                        
+                        work licensed under the broad license -> do what you want
+                    </span>
+                </div>
+            </div>
+        </div>
+        
+        <!--        after js       -->
+        <script src="js/main.js"></script>
+    </body>
+</html>

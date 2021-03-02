@@ -1,0 +1,32 @@
+.main-container {
+    
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background-color:black;
+}
+
+.wrapper {
+    clip: rect(100vh, 100vw);
+    position: absolute;
+    z-index: -1;
+    perspective: 15px;
+    height:100%;
+}
+
+#background {
+    background-clip: rect(100vh, 100vw);
+    filter: blur(2px) brightness(0.25);
+    min-width: 100vw;
+    min-height: 100vh;
+    transition: transform 0.5s;
+    backface-visibility: hidden;
+    
+    /*      credits: http://www.oby.ro/os/os_screen.htm     */
+    background-image: url('../img/bg.png');
+    background-size: cover;   
+    -ms-background-size: cover;   
+    -o-background-size: cover;   
+    -moz-background-size: cover;   
+    -webkit-background-size: cover;
+}

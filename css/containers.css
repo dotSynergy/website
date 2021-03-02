@@ -1,0 +1,166 @@
+.main-container {
+    height: 100%;
+    width: 100%;
+    background-color: yellow;
+    
+}
+
+.portfolio-container {
+    
+    overflow-y: scroll;
+    
+    position: absolute;
+    z-index: 2;
+    display: none;
+    
+    top: 100%;
+    
+    background: white;
+    
+    height: 100%;
+    width: 100%;
+    
+    -moz-transition: transform .4s; 
+    -webkit-transition: transform .4s;  
+    -ms-transition: transform .4s;  
+    -o-transition: transform .4s;  
+    transition: transform .4s;  
+}
+
+.bio-container {
+    
+    overflow-y: scroll;
+    
+    position: absolute;
+    z-index: 2;
+    display: none;
+    
+    left: 100%;
+    top: 0;
+    
+    background: white;
+    
+    height: 100%;
+    width: 100%;
+    
+    -moz-transition: transform .4s; 
+    -webkit-transition: transform .4s;  
+    -ms-transition: transform .4s;  
+    -o-transition: transform .4s;  
+    transition: transform .4s;  
+}
+
+.contacts-container {
+    
+    overflow-y: scroll;
+    
+    position: absolute;
+    z-index: 2;
+    display: none;
+    
+    left: -100%;
+    top: 0;
+    
+    background: white;
+    
+    height: 100%;
+    width: 100%;
+    
+    -moz-transition: transform .4s; 
+    -webkit-transition: transform .4s;  
+    -ms-transition: transform .4s;  
+    -o-transition: transform .4s;  
+    transition: transform .4s;  
+}
+
+.inside-content {
+    
+    margin: 0 auto;
+    padding: 4rem;
+    
+    font-family: Helvetica, "Trebuchet MS", Verdana, sans-serif;
+    
+    overflow-y: scroll;
+}
+
+
+@media screen and (max-width: 768px){
+    .inside-content { padding: 4rem 2rem; }
+}
+
+.inside-content.no-title {
+	padding-top: 0;
+}
+
+.inside-content.small-bottom-padding {
+    padding-bottom: 2rem;
+}
+
+.content-section {
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.main-container {
+    background: transparent;
+    display: flex;
+}
+
+.main-figure {
+    height: 500px;
+    width: auto;
+    filter: brightness(0.7);
+    
+}
+
+.title-container {
+    z-index: 1;
+}
+
+.main-title {
+    line-height: 0.7;
+    font-weight: 800;
+    font-family: "Source Code Pro Black", monospace;
+    font-size: 100px;
+    color: white;
+    margin-right: -130px;
+}
+
+.main-subtitle {
+    line-height: 1.1;
+    margin-top: -20px;
+    padding-left: 5rem;
+    color: rgba(230,230,230, 0.7);
+    font-family: "Source Code Pro Light", monospace;
+}
+
+@media screen and (max-width: 1024px){
+    .main-title { font-size: 60px; }
+    .main-figure { height: 400px; }
+}
+
+.container-title { 
+    position: absolute;
+    top: -10px;
+    left: 30%;
+}
+
+@media screen and (max-width: 768px){
+    .container-title { left: 5%; }
+}
+
+.container-second-title {
+    width: auto;
+    position: inline-block;
+    padding-left: 30vw;
+}
+
+@media screen and (max-width: 768px){
+    .container-second-title { padding-left: 5%; }
+}
+
+hr.container-separator {
+    height: 0px;
+    border: 0;
+    box-shadow: 0 -20px 40px 8px rgb(230,230,230);
+}

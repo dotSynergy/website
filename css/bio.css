@@ -1,0 +1,31 @@
+span.first-letter {
+     float: left;
+     font-size: 80px;
+     line-height: 60px;
+     padding-top: 4px;
+     padding-right: 10px;
+     padding-left: 3px;
+}
+
+@media screen and (max-width: 768px){
+    span.first-letter {
+         line-height: 55px;
+    }
+}
+
+span.bio-citation {
+    text-emphasis: red;
+    display: inline-block;
+    padding: 20px;
+    font-style: italic;
+    font-size: 20px;
+    background-color: rgb(240,240,240);
+}
+
+span.bio-citation:before, span.bio-citation:after {
+    content: "—";
+}
+
+p {
+    font-family: sans-serif;
+}

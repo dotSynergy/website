@@ -1,0 +1,127 @@
+/*          dir-buttons              */
+
+.dir-buttons {
+    
+    
+    border: solid white;
+    border-width: 0;
+    display: inline-block;    
+    position: absolute;    
+    
+    cursor: pointer;    
+    
+    transition: .4s ease-in-out;
+}
+
+.dir-buttons:before {    
+    color: white;
+    font-size: 20px;
+    font-family: monospace;
+}
+
+:root{
+    --btm-space: 0px;
+    --lat-space: 0px;
+}
+
+@media screen and (min-width: 768px){
+    :root{
+        --btm-space: 2vh;
+        --lat-space: 10vh;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    :root{
+        --lat-space: 20vh;
+    }
+}
+
+
+@media screen and (min-width: 1240px){
+    :root{
+        --lat-space: 30vh;
+    }
+}
+
+#portfolio_button {
+    border-width: 0 10px 10px 10px;
+    bottom: calc(var(--btm-space) + 20px);
+    left: calc(50vw - 4rem);    
+}
+
+#portfolio_button:before {
+    content: "Portfolio";
+}
+
+#portfolio_button:hover {
+    bottom: calc(var(--btm-space) + 25px);
+}
+
+#contacts_button {    
+    border-width: 0 0 10px 10px;
+    bottom: 10vh;
+    left: calc(var(--lat-space) + 20px);
+}
+
+#contacts_button:before {
+    content: "Contatti";
+}
+
+#contacts_button:hover {
+    left: calc(var(--lat-space) + 25px);
+}
+
+#bio_button {    
+    border-width: 0 10px 10px 0;
+    bottom: 10vh;
+    right: calc(var(--lat-space) + 20px);    
+}
+
+#bio_button:before {
+    content: "Bio";
+}
+
+#bio_button:hover {
+    right: calc(var(--lat-space) + 25px);
+}
+
+/*          close-button            */
+
+
+.close-button {
+    z-index: 3;
+    position: fixed;
+    right: 32px;
+    top: 32px;
+    width: 32px;
+    height: 32px;
+    
+    display: none;
+    
+    cursor: pointer;
+}
+
+@media screen and (min-width: 768px){
+    .close-button { opacity: 0.3 }
+}
+
+.close-button:hover {
+    opacity: 1;
+}
+
+.close-button:before, .close-button:after {
+    position: absolute;
+    left: 15px;
+    top: 0;
+    content: ' ';
+    height: 33px;
+    width: 2px;
+    background-color: #333;
+}
+.close-button:before {
+    transform: rotate(45deg);
+}
+.close-button:after {
+    transform: rotate(-45deg);
+}

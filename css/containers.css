@@ -88,6 +88,18 @@
     .inside-content { padding: 4rem 2rem; }
 }
 
+@media screen and (min-width: 768px){
+    .inside-content {
+        max-width: 600px;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .inside-content {
+        max-width: 800px;
+    }
+}
+
 .inside-content.no-title {
 	padding-top: 0;
 }

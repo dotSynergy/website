@@ -34,9 +34,19 @@ document.onreadystatechange = () => {
 };
 
 function openPortfolio(){
-    portContainer.style.display = 'block';
-    portContainer.style.transform = 'translateY('+ (-(document.body.clientHeight)) +'px)';
+
+    //non chiedete perché funziona
+            
+    portContainer.style.top = 0;
+    var str = 'translateY(100vh)';
+    portContainer.style.transform = str;
+
+    setTimeout(function () {
+        var str = 'translateY(0)';
+        portContainer.style.transform = str;
+    },10);
     
+    portContainer.style.display = 'block';
     portClose.style.display = 'block';
 }
 
@@ -44,6 +54,9 @@ function closePortfolio(){
     portContainer.style.transform = 'translateY('+ ((document.body.clientHeight)) +'px)';
     
     portClose.style.display = 'none';
+    setTimeout(function () {
+        portContainer.style.top = '100%';
+    },100);
     setTimeout(function() {portContainer.style.display = 'none' }, 400);
 }
 

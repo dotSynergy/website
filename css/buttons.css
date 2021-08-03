@@ -20,7 +20,7 @@
 }
 
 :root{
-    --btm-space: 0px;
+    --btm-space: 50px;
     --lat-space: 0px;
 }
 
@@ -60,7 +60,7 @@
 
 #contacts_button {    
     border-width: 0 0 10px 10px;
-    bottom: 10vh;
+    bottom: calc(var(--btm-space) + 10vh);
     left: calc(var(--lat-space) + 20px);
 }
 
@@ -74,7 +74,7 @@
 
 #bio_button {    
     border-width: 0 10px 10px 0;
-    bottom: 10vh;
+    bottom: calc(var(--btm-space) + 10vh);
     right: calc(var(--lat-space) + 20px);    
 }
 

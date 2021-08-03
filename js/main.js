@@ -1,6 +1,6 @@
 window.onload = () => {
     setTimeout(function () {
-            window.scrollTo(0, 0);
+            window.scrollTo(1, 0);
         },100);
     
     document.body.style.overflow = 'hidden';

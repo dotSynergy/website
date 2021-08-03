@@ -1,6 +1,6 @@
 .main-container {
-    height: 100%;
-    width: 100%;
+    height: 100vh;
+    width: 100vw;
     background-color: yellow;
     
 }
@@ -17,8 +17,8 @@
     
     background: white;
     
-    height: 100%;
-    width: 100%;
+    height: 100vh;
+    width: 100vw;
     
     -moz-transition: transform .4s; 
     -webkit-transition: transform .4s;  
@@ -40,8 +40,8 @@
     
     background: white;
     
-    height: 100%;
-    width: 100%;
+    height: 100vh;
+    width: 100vw;
     
     -moz-transition: transform .4s; 
     -webkit-transition: transform .4s;  
@@ -63,8 +63,8 @@
     
     background: white;
     
-    height: 100%;
-    width: 100%;
+    height: 100vh;
+    width: 100vw;
     
     -moz-transition: transform .4s; 
     -webkit-transition: transform .4s;  

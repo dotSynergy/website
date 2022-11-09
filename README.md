@@ -1,7 +1,7 @@
 # website
 yet another personal website
 
-currently self hosted on my rpi at [dotsynergy.ddns.net](dotsynergy.ddns.net)
+currently self hosted on my rpi at [dotsynergy.lol](dotsynergy.lol)
 
 This is free and unencumbered software released into the public domain.
 

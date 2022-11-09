@@ -6,7 +6,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, user-scalable=no,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
         <title>dotSynergy's Site</title>
-        <meta name="description" content="Sito principale di Samuele Barella.">
+        <meta name="description" content="Funniest shit i've ever seen.">
         
         <!--        favicon         -->
         <link rel="icon" href="./favicon.ico" type="image/x-icon">
@@ -21,10 +21,11 @@
         <link rel="stylesheet" href="css/bio.css">
         
         <!--        icons           -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
         
         <!--        before js       -->
         <script src="js/buttons.js"></script>
+        <script src="js/rand.js"></script>
     </head>
     <body>
         <div class="main-container">
@@ -32,15 +33,12 @@
                 <img id="background" src="img/bg.png"/>
             </div>
             <div class="title-container">
-                <h1 class="main-title">Samuele<br>Barella</h1>
-                <h2 class="main-subtitle">
-                    Embedded,<br>
-                    Full-Stack,<br>
-                    Drone,<br>
-                    <b>DEVELOPER</b>
+                <h1 class="main-title">Samuele<br>B.</h1>
+                <h2 class="main-subtitle" id="main_subtitle">
+                    <script type="text/javascript">randomQuote();</script>
                 </h2>
             </div>
-            <img src="img/me.png" class="main-figure"/>
+            <img src="img/me.jpg" class="main-figure"/>
         </div>
         
         <button id="contacts_button" class="dir-buttons" onClick="openContacts();"></button>
@@ -57,24 +55,24 @@
                     <div class="portfolio-card has-date">
                         
                         <div class="portfolio-image-container">
-                            <img class="portfolio-image" src="img/drone.png"/>
+                            <img class="portfolio-image" src="img/drone.jpg"/>
                         </div>
                         <h1 class="portfolio-item-title">
                             <a href="https://www.openuav.it">openuav.it</a>
                         </h1>
-                        <h2 class="portfolio-item-subtitle">piattaforma drone open source ed sdk </h2>
+                        <h2 class="portfolio-item-subtitle">sviluppo software e operazioni con droni</h2>
                         <span class="portfolio-item-date">10/2020 — ONGOING</span>
                     </div>
                 </div>
                 <div class="portfolio-item">
                     <div class="portfolio-card has-date">
                         <div class="portfolio-image-container">
-                            <img class="portfolio-image" src="img/stranck.png"/>
+                            <img class="portfolio-image" src="img/stranck.jpg"/>
                         </div>
                         <h1 class="portfolio-item-title">
                             <a href="https://www.stranck.ovh">stranck.ovh</a>
                         </h1>
-                        <h2 class="portfolio-item-subtitle">sito web per un amico, solo in HTML+CSS e JQuery per link e animazioni</h2>
+                        <h2 class="portfolio-item-subtitle">semplice sito web per un amico</h2>
                         <span class="portfolio-item-date">09/2020</span>
                     </div>
                 </div>
@@ -87,7 +85,7 @@
                         <h1 class="portfolio-item-title">
                             <a href="https://www.meliver.com">meliver.com</a>
                         </h1>
-                        <h2 class="portfolio-item-subtitle">backend Laravel di una piattaforma per ordinare da casa o ristorante in fase di sviluppo</h2>
+                        <h2 class="portfolio-item-subtitle">backend Laravel di una piattaforma per ordinare da casa o ristorante</h2>
                         <span class="portfolio-item-date">05/2020 — ONGOING</span>
                     </div>
                 </div>
@@ -127,7 +125,7 @@
                 </div>                
                 <div class="portfolio-item small">
                     <div class="portfolio-card">
-                        <img class="portfolio-image" src="img/pcivile.png"/>
+                        <img class="portfolio-image" src="img/pcivile.jpg"/>
                         <h1 class="portfolio-item-title">
                             <a href="https://pcivile1.altervista.org/">
                             pcivile_org</a>
@@ -150,51 +148,65 @@
         <div id="bio_container" class="bio-container">
             <a class="close-button" id="c_btn_b" onClick="closeBio();"></a>
             
-            <div class="inside-content">
+            <div class="inside-content" style="padding-bottom: 0;">
                 
                 <section class="content-section">
                     <h1>
-                        Seriamente, chi legge le bio?
+                        Bio
                     </h1>
                     <p>
-                        <span class="first-letter">S</span>e ti interessa davvero e non hai chiuso istantaneamente,<br>
-                        ho studiato informatica all'<i>I.T.I.S. Magistri Cumacini di Como</i> tra il 2014 e il 2019. <br>
-                        Su suggerimento di insegnanti che ancora oggi ringrazio, mi sono avvicinato al mondo dello sviluppo di applicativi embedded e programmi di amministrazione web. Tale percorso mi é stato utilissimo per selezionare una serie di strumenti che ancora oggi sto imparando e utilizzo.<br>
-                        In seguito a questo periodo di studio, mi sono deciso a continuare presso l'<i>Universitá degli Studi dell'Insubria di Como</i>, dove sto seguendo il corso di Tecnologia dell'Informazione (informatica ma con extra steps).
+                        <span class="first-letter">S</span>e ti interessa davvero,
+                        sono Samuele e sto studiando CS in qualche universitá per prendere una laurea. Nel tempo libero mi occupo di droni, computer e qualcosina di meccanica.
+                    </p>
+
+                    <figure class="bio-figure"> 
+                        <img class="bio-img" src="img/drone_epic.jpeg">
+                        <figcaption class="bio-img-descr">
+                            Diga della Verzasca, circa 2022 (colorizzata).
+                        </figcaption>
+                    </figure>
+
+                    <p>
+                        Mi piace assemblare, configurare ed estendere le funzionalitá dei droni, per poi ovviamente farli volare.<br>
+                        Che siano da FPV, da corsa o hexa/octa, sviluppo software, integrazioni e altra roba divertente.  
+                    </p>
+
+                    <p>
+                        Oltre a questo, mi affascina il mondo dei computer e le loro applicazioni piú "reali", tipo IoT, visualizzazione e analisi di dati, e in generale ambienti con risorse ristrette ma tanto potenziale.
                     </p>
                     
                     <p>
-                        Nel mentre, ho lavorato brevemente presso Aermatica3D, dove ho appreso  qualche nozione del mio interesse principale attualmente: gli UAV, o piú semplicemente i droni.
-                    </p>                    
+                        Lavoro in ambiti di automazione, gestionali e altra roba relativamente noiosa, ma in fondo bisogna in qualche modo finanziare acquisti impulsivi di LEGO.
+                    </p>
+
                     
                     <span class="bio-citation">
-                        Il breve periodo di lavoro presso Aermatica mi ha aperto la strada alla ricerca nel settore UAV, in particolare alle soluzioni open source
+                        #sigma_grindset
                     </span>
-                    
+
                     <p>
-                        L'esperienza mi ha fornito abbastanza strumenti da lanciare un progetto personale, tale <a href="https://openuav.it">OpenUAV</a>, il cui obiettivo principale é sviluppare una piattaforma  SDK per creare applicazioni in grado di girare sull'hardware degli UAV riducendo il fattore principale di break-in: il costo.
+                        Oltre a questo sto portando avanti alcuni progetti che hanno buon potenziale di diventare startup:<br>
                     </p>
                     <p>
-                        Durante lo stesso periodo, ho aiutato un amico a costruire interamente il lato web della sua azienda: 
+                        <a href="https://openuav.it">OpenUAV</a> per la creazione di sistemi unmanned in ambiti data driven, come l'agricoltura;
                     </p>
-                        <ul>
-                            <li><b>webserver</b>, dalla configurazione della macchina alla gestione dei domini;</li>
-                            <li><b>mail server</b> con dominio custom;</li>
-                            <li><b>deployment system</b> via bitbucket;</li>
-                            <li><b>sito web</b> di presentazione;</li>
-                            <li><b>pannello web</b> per la gestione e visualizzazione dati;</li>
-                            
-                        </ul>
-                    
                     <p>
-                        Tale esperienza mi ha fornito l'ultimo tassello delle conoscenze che utilizzo tutti i giorni: la gestione di sistemi Linux.
+                        <a href="https://meliver.com">Meliver</a> una piattaforma di food ordering, in uso da alcuni ristoranti, realizzata in Laravel e Flutter.
                     </p>
+
+                    <div class="bio-row">
+                        <div class="bio-foot">
+                            <p class="bio-foot-desc">
+                                Faccio anche parecchia altra roba, principalmente in py e PHP, e in futuro mi piacerebbe insegnare o magari diventare apicoltore.
+                            </p>
+                        </div>
+                        
+                        <div class="bio-foot">
+                            <img class="bio-img-foot" src="img/pepe.png">
+                        </div>
+                    </div>
                     
-                    <p>
-                        Attualmente, oltre ad OpenUAV, sto per lanciare <a href="https://meliver.com">Meliver</a>, un sistema per ordinare direttamente da app, senza commissioni né obblighi per l'utente. Semplicemente si tratta di una piattaforma per comunicare al ristorante il proprio ordine, ed esso si occuperá di soddisfarlo come meglio crede.
-                    </p>
-                    
-                    <h1>BTW uso <s>Arch</s>Manjaro</h1>
+
                 </section>
             
             </div>
@@ -218,10 +230,10 @@
                     <span class="contact-method">
                         /* eMail
                         <br><br>
-                        <a href="mailto:dotsynergy@protonmail.com">
+                        <!--<a href="mailto:dotsynergy@protonmail.com">
                             <i class="bi bi-envelope"></i> dotsynergy@protonmail.com
                         </a>
-                        <br><br>
+                        <br><br>-->
                         <a href="mailto:samuele.barella@openuav.it">
                             <i class="bi bi-bezier"></i> samuele.barella@openuav.it
                         </a>
@@ -233,6 +245,27 @@
                         <br><br>
                         <a href="https://github.com/dotSynergy">
                             <i class="bi bi-github"></i> dotSynergy
+                        </a>
+                        <br><br>
+                        */
+                    </span>
+                    <span class="contact-method">
+                        /* P.IVA
+                        <br><br>
+                        <a>
+                            <i class="bi bi-currency-euro"></i> IT03996830133
+                        </a>
+                        <br><br>
+                        */
+                    </span>
+                    <span class="contact-method">
+                        /* Telefono
+                        <br><br>
+                        <a id="phone">
+                            <i class="bi bi-phone"></i>
+                            +39 
+                            <a id="phone-1">**********</a>
+                            <a id="phone-2" type="button" onclick="revealPhone(this)" href="#"> reveal</a>
                         </a>
                         <br><br>
                         */
